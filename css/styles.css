@@ -221,3 +221,55 @@ footer p {
   display: table-cell;
   vertical-align: middle;
 }
+
+#donate {
+  background-color: red;
+}
+
+#donate a {
+  color: #e7e7e7;
+}
+
+#donate a:hover {
+}
+
+#donate a:after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.4);
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+
+#donate a:hover:after {
+    width: 120%;
+    background-color: rgba(255,255,255,0);
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+.apply {
+  background-color: red;
+  width: 80%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.apply a {
+  text-decoration: none;
+  color: white;
+}
+
+.apply a:hover {
+  text-decoration: none;
+}
