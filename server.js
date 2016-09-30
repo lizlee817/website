@@ -15,8 +15,12 @@ app.get('/about', function(req, res) {
   res.sendFile(path.join(__dirname + '/views/about.html'));
 });
 
-app.get('/team', function(req, res) {
-  res.sendFile(path.join(__dirname + '/views/team.html'));
+app.get('/students', function(req, res) {
+  res.sendFile(path.join(__dirname + '/views/students.html'));
+});
+
+app.get('/mentors', function(req, res) {
+  res.sendFile(path.join(__dirname + '/views/mentors.html'));
 });
 
 app.get('/sponsors', function(req, res) {
