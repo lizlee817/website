@@ -15,8 +15,8 @@ app.get('/about', function(req, res) {
   res.sendFile(path.join(__dirname + '/views/about.html'));
 });
 
-app.get('/roster', function(req, res) {
-  res.sendFile(path.join(__dirname + '/views/roster.html'));
+app.get('/team', function(req, res) {
+  res.sendFile(path.join(__dirname + '/views/team.html'));
 });
 
 app.get('/sponsors', function(req, res) {

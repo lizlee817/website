@@ -210,3 +210,38 @@ footer p {
 .core-box:hover {
   color: black;
 }
+
+.dropdown-content {
+  position: absolute;
+  display: none;
+  z-index: 100;
+  text-align: left;
+  border: solid #2622FF;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  text-decoration: none;
+}
+
+.dropdown-box {
+    background: #fff;
+    background: rgba(255,255,255,0.9);
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.team {
+  list-style-type: none;
+  font-size: 1.25em;
+}
+
+.sponsors {
+  float: none;
+  display: table-cell;
+  vertical-align: middle;
+}
