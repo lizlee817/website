@@ -8,19 +8,19 @@ const app = express();
 app.use(express.static(path.join(__dirname)));
 
 app.get('/', function(req, res) {
-  res.sendFile(path.join(__dirname + '/index.html'));
+  res.sendFile(path.join(__dirname + '/views/index.html'));
 });
 
 app.get('/about', function(req, res) {
-  res.sendFile(path.join(__dirname + '/about.html'));
+  res.sendFile(path.join(__dirname + '/views/about.html'));
 });
 
 app.get('/roster', function(req, res) {
-  res.sendFile(path.join(__dirname + '/roster.html'));
+  res.sendFile(path.join(__dirname + '/views/roster.html'));
 });
 
 app.get('/sponsors', function(req, res) {
-  res.sendFile(path.join(__dirname + '/sponsors.html'));
+  res.sendFile(path.join(__dirname + '/views/sponsors.html'));
 });
 
 app.listen(process.env.PORT || 3000, function() {

@@ -6,7 +6,8 @@
 
 body {
     font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-    background: url('../img/bg.jpg') no-repeat center center fixed;
+    /*background: url('../img/bg.jpg') no-repeat center center fixed;*/
+    background-color: #2622FF;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -189,4 +190,23 @@ footer p {
         display: table;
         clear: both;
     }
+}
+
+/* custom style options */
+
+.img-responsive {
+  margin: auto;
+  max-height: 484px;
+}
+
+.core-box {
+  border: solid white;
+  background-color: #2622FF;
+  border-width: 1px;
+  border-radius: 5px;
+  color: white;
+}
+
+.core-box:hover {
+  color: black;
 }
