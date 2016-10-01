@@ -101,6 +101,7 @@ hr {
   padding-top: 1.2em;
   color: white;
   text-align: center;
+  box-shadow: 2px 2px black;
 }
 
 .intro-text {
@@ -223,6 +224,7 @@ footer p {
   border-width: 1px;
   border-radius: 5px;
   color: white;
+  box-shadow: 2px 2px black; 
 }
 
 .core-box:hover {
