@@ -224,16 +224,19 @@ footer p {
 
 #donate {
   background-color: red;
+  color: white;
 }
 
-#donate a {
-  color: #e7e7e7;
+#donate-button {
+  background-color: red;
+  color: white;
+}
+#donate-button a {
+  text-decoration: none;
+  color: white;
 }
 
-#donate a:hover {
-}
-
-#donate a:after {
+/*#toShimmer a:after {
     content: "";
     position: absolute;
     top: 0px;
@@ -248,7 +251,7 @@ footer p {
     transition: none;
 }
 
-#donate a:hover:after {
+#toShimmer a:hover:after {
     width: 120%;
     background-color: rgba(255,255,255,0);
     -webkit-transition: all 0.5s ease-out;
@@ -256,7 +259,7 @@ footer p {
     -ms-transition: all 0.5s ease-out;
     -o-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out;
-}
+}*/
 
 .apply {
   background-color: red;

@@ -70,8 +70,13 @@
                     <li>
                         <a href="/sponsors">Sponsors</a>
                     </li>
-                    <li id="donate">
-                      <a href="http://cdmboosters.com/donate-any-amount" target="_blank">Donate</a>
+                    <li class="dropdown">
+                      <a href="#" id="donate" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Donate<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                          <li><a data-toggle="modal" data-target="#myModal" href="">Corporate</a></li>
+                          <li role="separator" class="divider"></li>
+                          <li><a href="http://www.gofundme.com/tritontech" target="_blank">Individual</a></li>
+                      </ul>
                     </li>
                 </ul>
             </div>
@@ -79,6 +84,29 @@
         </div>
         <!-- /.container -->
     </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title" id="myModalLabel">Instructions for Corporate Donors</h4>
+          </div>
+          <div class="modal-body">
+            Corporate donations go through CdM Boosters, as it allows for tax write-offs.
+            <br>
+            <br>
+            To target our specific club, please write <strong>Triton Tech Robotics</strong> in the <strong>Specific Designations</strong> section.
+          </div>
+          <div class="modal-footer">
+            <button id="donate-button" type="button" class="btn btn-primary"><a href="http://cdmboosters.com/donate-any-amount" target="_blank">CONTINUE TO DONATION</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="container">
 
