@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Mentors - Triton Tech</title>
+    <title>Mentors | Triton Tech</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -20,6 +20,9 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Icon -->
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -70,8 +73,13 @@
                     <li>
                         <a href="/sponsors">Sponsors</a>
                     </li>
-                    <li id="donate">
-                      <a href="http://cdmboosters.com/donate-any-amount" target="_blank">Donate</a>
+                    <li class="dropdown">
+                      <a href="#" id="donate" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Donate<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                          <li><a data-toggle="modal" data-target="#myModal" href="">Corporate</a></li>
+                          <li role="separator" class="divider"></li>
+                          <li><a href="http://www.gofundme.com/tritontech" target="_blank">Individual</a></li>
+                      </ul>
                     </li>
                 </ul>
             </div>
@@ -79,6 +87,29 @@
         </div>
         <!-- /.container -->
     </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title" id="myModalLabel">Instructions for Corporate Donors</h4>
+          </div>
+          <div class="modal-body">
+            Corporate donations go through CdM Boosters, as it allows for tax write-offs.
+            <br>
+            <br>
+            To target our specific club, please write <strong>Triton Tech Robotics</strong> in the <strong>Specific Designations</strong> section.
+          </div>
+          <div class="modal-footer">
+            <button id="donate-button" type="button" class="btn btn-primary"><a href="http://cdmboosters.com/donate-any-amount" target="_blank">CONTINUE TO DONATION</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="container">
 
@@ -118,7 +149,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <p>Corona del Mar High School &copy; 2016</p>
+                    <p>Triton Tech &copy; 2016</p>
                 </div>
             </div>
         </div>
